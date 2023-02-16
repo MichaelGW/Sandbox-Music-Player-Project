@@ -10,6 +10,8 @@ Minim minim;
 AudioPlayer song0, song1, song2, song3, song4, song5, song6, song7;
 AudioPlayer soundEffect0, soundEffect1;
 //
+int time = 7000;
+//
 Boolean activateWindow=false;
 //
 void setup() {
@@ -40,19 +42,37 @@ void setup() {
   soundEffect0 = minim.loadFile( soundEffectPathway + stingFileName );
   soundEffect1 = minim.loadFile( soundEffectPathway + closeDoorFileName );
   //
-  //println("Music Pathway is", musicPathway);
+  //Illsutrate Garbage Collection of Local Variable
+  //println("Music Pathway is", musicPathway); //local variable dosen't exit outside of void loadMusic() {}
+  //
 } //End loadMusic
 //
 void draw() {
   if ( firstMouseclick == true ) background(0);
+  //
+  //Debugging the Effective Length of the Sound Effect to code a delay
+  //println ( soundEffect0.position(), soundEffect).length() );
+  //println ("when does the sound stop? Indicates delay");
+  //Debugging a sound to shorten a file play
+  //println( soundEffect1.position(), soundEfffect1.length() );
+  //
   //End draw
 //
 void keyPressed() {
   //
-  soundEffect.play();
-  if ( key=='Q' || key=='q' ) exit();
-  if ( key==CODED && key==ESC ) exit();
+  //Play sound effect when pressing a key, including delay
+  soundEffect0.play();
+  soundEffect0.rewind();
+  delay(4000); //milliseconds read from draw() println() debugging
+  //println( "keypressed:", soundEffect0.length() );
   //
+  keyPressedshortCuts();
+  //
+  //Quit Button key Board shortcut
+  if ( key == 'Q' || key == 'q' ) {
+    soundEffect1.loop(0); //Only need partial file, use .play(int millis)
+    //Visual Image or Text of Goodbye
+    delay(3000): //alternate way of playing sound once
 } //End keyPressed
 //
 void mousePressed() {
