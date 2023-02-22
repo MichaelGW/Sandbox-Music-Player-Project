@@ -1,4 +1,4 @@
-import ddf.minim.*;
+import ddf.minim.*; }
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
@@ -48,7 +48,7 @@ void setup() {
 } //End loadMusic
 //
 void draw() {
-  if ( firstMouseclick == true ) background(0);
+  if ( activateWindow == true ) background(0);
   //
   //Debugging the Effective Length of the Sound Effect to code a delay
   //println ( soundEffect0.position(), soundEffect).length() );
@@ -68,16 +68,17 @@ void keyPressed() {
   //
   keyPressedshortCuts();
   //
-  //Quit Button key Board shortcut
-  if ( key == 'Q' || key == 'q' ) {
-    soundEffect1.loop(0); //Only need partial file, use .play(int millis)
-    //Visual Image or Text of Goodbye
-    delay(3000): //alternate way of playing sound once
+  
+  
+  
+  
+  quitButtons();
+  //
 } //End keyPressed
 //
 void mousePressed() {
   soundEffect1.rewind();
-  if ( firstMouseclick==false ) firstMouseclick = true;
+  if ( activateWindow==false ) activateWindow = true;
 } //End mousePressed
 //
 //End MAIN Program
