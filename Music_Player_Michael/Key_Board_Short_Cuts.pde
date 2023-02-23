@@ -1,6 +1,6 @@
 void keyPressedShortCuts() {
 //
- musicShortCuts():
+musicShortCuts();
  quitButtons();
  //
 }//End keyPressedShortCuts
@@ -14,11 +14,11 @@ void keyPressedShortCuts() {
    if ( key == '4' ) song3.loop(0);
    if ( key == '5' ) song4.loop(0);
    if ( key == '6' ) song5.loop(0);
-   if ( key == '7' )  song6.loop(0);
+   if ( key == '7' ) song6.loop(0);
    if ( key == '8' ) song7.loop(0);
  //End musicShortCuts
  //
-void quitButton() {
+ void quitButton () }
    //Quit Button key Board shortcut
   if ( key == 'Q' || key == 'q' ) {
     soundEffect1.loop(0); //Only need partial file, use .play(int millis)

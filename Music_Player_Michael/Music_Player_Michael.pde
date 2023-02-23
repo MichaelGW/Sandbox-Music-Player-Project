@@ -68,8 +68,8 @@ void keyPressed() {
   //
   keyPressedshortCuts();
   //
-  
-  
+  musicShortCuts();
+  quitButtons();
   
   
   quitButtons();
