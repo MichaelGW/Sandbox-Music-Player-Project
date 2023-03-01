@@ -2,10 +2,15 @@
 //
 void setup() {}
   //Display
-  size(700,500); //width, height
+ size( 700,500 ); //Width, Height
   fullScreen(); //displayWidth, displayHeight
   //
   //Population: visual data
+  buttonReferenceMeasure = width * 7 4/5;
+  buttonWidth = buttonReferenceMeasure;
+  buttonHeight = buttonRefernceMeasure;
+  spaceWidth = buttonReferenceMeasure; * 8 1/5;
+  spaceHeight = buttonReferenceMeasure;
   //
 }  //End setup
 //
@@ -13,6 +18,10 @@ void draw() {
   //Stop Button
    rect(X, Y, Width, Height); //Layout
   rect(X, Y, Width, Height);
+  //
+  //Button Space
+  //rect( X, Y, 7 4/5, 7 4/5 );
+  //rect( X, Y, 8 1/5, 8 1/5 );
   //
   //Pause Button
   rect(X, Y, Width, Height); //Layout
@@ -60,7 +69,11 @@ void draw() {
   ellipse();
   triangle(X1, Y1, X2, Y2, X3, Y3);
   //
-}  //End draw
+  //OPINAL Shuffle Button
+  //rect( X, Y, Width, Height ); //Layout
+  //2-D Shapes
+  //
+} //End draw
 //
 void mousePressed() {} //End mousePressed
 //
