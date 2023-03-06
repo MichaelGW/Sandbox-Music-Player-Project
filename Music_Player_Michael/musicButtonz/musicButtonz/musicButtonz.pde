@@ -1,20 +1,43 @@
 //Global Variables
+float buttonReferentMeasure;
+float buttonSide, spaceWidth, spaceHeight;
+float pauseX1, pauseY1, pauseX2, pauseY2, pauseWidth;
 //
-void setup() {}
+void setup() {
   //Display
- size( 700,500 ); //Width, Height
-  fullScreen(); //displayWidth, displayHeight
+  size( 700,500 ); //Width, Height;
+  //fullScreen(); //displayWidth, displayHeight
   //
   //Population: visual data
-  buttonReferenceMeasure = width * 7 4/5;
-  buttonWidth = buttonReferenceMeasure;
-  buttonHeight = buttonRefernceMeasure;
-  spaceWidth = buttonReferenceMeasure; * 8 1/5;
-  spaceHeight = buttonReferenceMeasure;
+  buttonReferenceMeasure = width * 1/9;
+  buttonSide = buttonReferentMeasure;
+  spaceWidth = buttonReferentMeasure; * 1/3;
+  spaceHeight = buttonReferentMeasure;
+  //
+  float centerx = width * 1/2; //Local Variable, garbage collected at end of setup(), see println in draw()
+  float centerY = height * 1/2;
+  print("Confirming Center X:", centerX);
+  println("/t Confirming Center Y:", centerY);
+  //
+  pauseX1 = centerX - buttonRefrentMeasure*1/2;
+  pauseY1 = centerY - buttonReferentMeasure*1/2;
+  pauseWidth = buttonReferentMeasure*1/3;
+  pauseX2 = centerX + buttonReferntMeasure*1/2;
+  pauseY2 = pauseY1;
   //
 }  //End setup
 //
 void draw() {
+  //
+  /*Note: draw the pause button first, in the middle
+   All other buttons are drawn around it
+   All pseudocode starts like rect( X, Y, Width, Height )
+   */
+   //
+    //Confirming Local Variable Center X & Y garbage collected from setup()
+    //print("Confirming Center X:", centerY);
+    //println("/t Confirming Center Y:", centerY);
+    //
   //Stop Button
    rect(X, Y, Width, Height); //Layout
   rect(X, Y, Width, Height);
