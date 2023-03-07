@@ -1,7 +1,14 @@
+/* Note: this program does not deal with spaces very well
+ How would spaces be dealt with?
+ */
+ //
 //Global Variables
 float buttonReferentMeasure;
 float buttonSide, spaceWidth, spaceHeight;
 float pauseX1, pauseY1, pauseX2, pauseY2, pauseWidth;
+float playX, playY, stopX, stopY, muteX, muteY, loopIX, loopIY;
+float ffX, ffY, rrX, rry, nextX, nextY, prevX, prevY, loop1X, loop1Y
+float loopPlaylistX, loopPlaylistY;
 //
 void setup() {
   //Display
@@ -12,10 +19,10 @@ void setup() {
   buttonReferenceMeasure = width * 1/9;
   buttonSide = buttonReferentMeasure;
   spaceWidth = buttonReferentMeasure; * 1/3;
-  spaceHeight = buttonReferentMeasure;
   //
   float centerx = width * 1/2; //Local Variable, garbage collected at end of setup(), see println in draw()
   float centerY = height * 1/2;
+  int buttonPositionColumn, buttonPositionRow;
   print("Confirming Center X:", centerX);
   println("/t Confirming Center Y:", centerY);
   //
