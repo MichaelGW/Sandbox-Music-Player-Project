@@ -54,57 +54,68 @@ void draw() {
   //rect( X, Y, 8 1/5, 8 1/5 );
   //
   //Pause Button
-  rect(X, Y, Width, Height); //Layout
-  rect(X, Y, Width, Height);
-  rect(X, Y, Width, Height);
+  rect(); //Layout
+  rect();
+  rect();
   //
   //Play Button
-  rect(X, Y, Width, Height); //Layout
-  triangle(X1, Y1, X2, Y2, X3, Y3 );
+  rect(); //Layout
+  triangle();
   //
   //MUTE Button
-  rect(X, Y, Width, Height); //Layout
+  rect(); //Layout
   //Students to develop
   //
   //Fast Forward
-  rect(X, Y, Width, Height); //Layout
-  triangle(X1, Y1, X2, Y2, X3, Y3);
-  triangle(X1, Y1, X2, Y2, X3, Y3);
+  //rect(); //Layout
+  triangle();
+  triangle();
   //
   //Reverse in the Song
-  rect(X, Y, Width, Height); //Layout
-  triangle(X1, Y1, X2, Y2, X3, Y3);
-  triangle(X1, Y1, X2, Y2, X3, Y3);
+  //rect( rrX, rrY, buttonSide, buttonSid ); //Layout
+  triangle( rrX1A, rrY1A, rrX2A, rrY2A, rrX3A, rrY3A );
+  triangle( rrX1B, rrY1B, rrX2B, rrY2B, rrX3B, rrY3B );
   //
   //Next Song Button
-  rect(X, Y, Width, Height); //Layout
-  triangle(X1, Y1, X2, Y2, X3, Y3);
-  rect(X, Y, Width, Height);
+  rect( nextX, nextY, buttonSide, buttonSide); //Layout
+  //triangle( nextX1, nextY1, nextX2, nextY2, nextX3, nextY3 );
+  //rect( nextX, nextY, prevWidth, buttonSide );
+  //
+  //Previous Button
+  rect( prevX, prevY, buttonSide, buttonSide ); //Layout
+  //triangle( prevX1, prevY1, prevX2, prevY2, prevX3, prevY3 );
+  //rect( prevX, prevY, preWidth, buttonSide );
   //
   //Loop Song (Once)
-  rect(X, Y, Width, Height); //Layout
-  ellipse(X, Y, WidthDiameter, Heigh);
-  ellipse();
-  triangle(X1, Y1, X2, Y2, X3, Y3);
+  //Students to Develop
+  rect( loop1X, loop1Y, buttonSide, buttonSide ); //Layout
+  //ellipse( loop1X, loop1Y, loop1WidthDiameter, loop1HeightDiameter );
+ // ellipse( loop1X, loop1Y, loop1WidthDiameter, loop1HeightDiameter );
+ // triangle( loop1X1, loop1Y1, loop1X2, loop1Y2, loop1X3 );
   //
   //Loop Song (Infinitely)
-  rect(X, Y, Width, Height); //Layout
-  ellipse(X, Y, WidthDiameter, Heigh);
-  ellipse();
-  triangle(X1, Y1, X2, Y2, X3, Y3);
+  rect( loopIX, loopIY, buttonSide, buttonSide ); //Layout
+  //ellipse( loopIX, loopIY, loopWidthDiameter, loopHeightDiameter );
+  //ellipse( loopIX, loopIY, loopWidthDiameter, loopHeightDiameter );
+  //triangle( loop1X1, loop1Y1, loop1X2, loop1Y2, loop1X3, loop1Y3 );
   //
   //Loop Playlist (Infinitely)
-  rect(X, Y, Width, Height); //Layout
-  ellipse(X, Y, WidthDiameter, Heigh);
-  ellipse();
-  triangle(X1, Y1, X2, Y2, X3, Y3);
+  //Students to Develop
+  rect( loopPlaylistX, loopPlaylistY, buttonSide, buttonSide ); //Layout
+  //ellipse( loopPlaylistX, loopPlaylistY, loopPlaylistWithDiameter, loopPlaylistHeightDiameter );
+  //ellipse( loopPlaylistX, loopPlaylistY, loopPlaylistWithDiameter, loopPlaylistHeightDiameter );
+  //triangle( loopPlaylistX1, loopPlaylistY1, loopPlaylistX2, loopPLaylistY2, loopPlaylistX3, loopPlaylistY3 );
   //
   //OPINAL Shuffle Button
-  //rect( X, Y, Width, Height ); //Layout
+  //rect( shuffleX, shuffleY, buttonSide, buttonSide ); //Layout
   //2-D Shapes
   //
 } //End draw
 //
-void mousePressed() {} //End mousePressed
+void keyPressed(){
+} //End keyPressed
+//
+void mousePressed() {
+} //End mousePressed
 //
 //End MAIN Program
