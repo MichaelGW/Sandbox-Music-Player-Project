@@ -19,12 +19,12 @@ void setup() {
   //fullScreen(); //displayWidth, displayHeight
   //
   //Population: visual data
-  buttonReferentMeasure = width * 1/18;
+  buttonReferentMeasure = width * 1/12;
   buttonSide = buttonReferentMeasure;
-  spaceWidth = buttonReferentMeasure * 1/18;
+  spaceWidth = buttonReferentMeasure * 1/12;
   //
   float centerx = width * 1/2; //Local Variable, garbage collected at end of setup(), see println in draw()
-  float centerY = height * 1/2;
+  float centerY = height * 1/1.2;
   int buttonPositionColum, buttonPositionRow;
   print("Confirming Center X:", centerx);
   println("/t Confirming Center Y:", centerY);
