@@ -38,7 +38,7 @@ void setup() {
   playY1 = pauseY1;
   playX3 = playX1;
   playY3 = pauseY1 + buttonReferentMeasure;
-  //Note: need playY3 before playY2
+  //
   playX2 = playX1 + buttonReferentMeasure;
   playY2 = playY1 + (playY3-playY1)*1/2;
   //
@@ -52,7 +52,7 @@ void setup() {
   buttonPositionColum = 1;
   ffX1A = pauseX1 + ( buttonPositionColum * buttonReferentMeasure );
   ffY1A = pauseY1;
-  //Note: need points 1 & 3 to calculate 2
+  //
   ffX3A = ffX1A;
   ffY3A = ffY1A + buttonReferentMeasure;
   ffX2A = ffX1A + buttonReferentMeasure*1/2;
@@ -81,36 +81,36 @@ void setup() {
   //
    buttonPositionColum = 2; //can increment with +=1
   nextX = pauseX1 + ( buttonPositionColum*buttonReferentMeasure );
-  nextY = pauseY1;
-  nextX1 = nextX;
-  nextY1 = nextY;
-  nextX3 = nextX1;
+  nextY = pauseY1 + ( buttonPositionColum*buttonReferentMeasure );
+  nextX1 = nextX + ( buttonPositionColum*buttonReferentMeasure ) ;
+  nextY1 = nextY + ( buttonPositionColum*buttonReferentMeasure );
+  nextX3 = nextX1 + ( buttonPositionColum*buttonReferentMeasure );
   nextY3 = nextY1 + buttonReferentMeasure;
   nextX2 = nextX1 + buttonReferentMeasure*2/3;
   nextY2 = nextY1 + (nextY3 - nextY1)*1/2;
   nextXR2 = nextX + buttonReferentMeasure*2/3;
-  nextYR2 = nextY;
+  nextYR2 = nextY + ( buttonPositionColum*buttonReferentMeasure );
   nextWidth = buttonReferentMeasure*1/3;
   //
   prevX = pauseX1 - ( buttonPositionColum*buttonReferentMeasure );
-  prevY = pauseY1;
-  prevX1 = rrX2B; //backward from previous button
-  prevY1 = prevY;
-  prevX3 = prevX1;
+  prevY = pauseY1 - ( buttonPositionColum*buttonReferentMeasure );
+  prevX1 = rrX2B - ( buttonPositionColum*buttonReferentMeasure );
+  prevY1 = prevY - ( buttonPositionColum*buttonReferentMeasure );
+  prevX3 = prevX1 - ( buttonPositionColum*buttonReferentMeasure );
   prevY3 = prevY1 + buttonReferentMeasure;
   prevX2 = prevX1 - buttonReferentMeasure*2/3;
   prevY2 = prevY1 + ( prevY3 - prevY1 )*1/2;
   prevXR = prevX2 - buttonReferentMeasure*1/3;
-  prevYR = prevY1;
+  prevYR = prevY1 - ( buttonPositionColum*buttonReferentMeasure );
   preWidth = buttonReferentMeasure*1/3;
   //
   //
-  buttonPositionColum = 4; //can increment with +=1
+  buttonPositionColum = 2; //can increment with +=1
   nextX = pauseX1 + ( buttonPositionColum*buttonReferentMeasure );
-  nextY = pauseY1;
+  nextY = pauseY1 - ( buttonPositionColum*buttonReferentMeasure*1/700 );
   //
   prevX = pauseX1 - ( buttonPositionColum*buttonReferentMeasure );
-  prevY = pauseY1;
+  prevY = pauseY1 - ( buttonPositionColum*buttonReferentMeasure*2/700 );
   //
   buttonPositionColum = 3;
   loop1X = pauseX1 + ( buttonPositionColum*buttonReferentMeasure );
