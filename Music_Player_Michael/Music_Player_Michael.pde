@@ -1,4 +1,4 @@
-import ddf.minim.*; }
+import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
 import ddf.minim.signals.*;
@@ -24,17 +24,17 @@ void setup() {
   String grooveFileName = "groove.mp3";
   String eurekaFileName = "Eureka.mp3";
   String competitionFileName = "Beat_Your_Competition.mp3";
-  String cyclesFileName = "Cycles.mp3"
-  String ghostFileName = "Ghost_Walk.mp3"
-  String newsRoomFileName = "Newsroom.mp3"
-  String enginesFileName = "Start_Your_Engines.mp3"
-  String simplestFileName = "The_Simplest.mp3"
-  String stingFileName = "The_Simplest_Sting.mp3"
-  String closeDoorFileName = "Wood_Door_Open_and_Close_Series.mp3"
+  String cyclesFileName = "Cycles.mp3";
+  String ghostFileName = "Ghost_Walk.mp3";
+  String newsRoomFileName = "Newsroom.mp3";
+  String enginesFileName = "Start_Your_Engines.mp3";
+  String simplestFileName = "The_Simplest.mp3";
+  String stingFileName = "The_Simplest_Sting.mp3";
+  String closeDoorFileName = "Wood_Door_Open_and_Close_Series.mp3";
   song0 = minim.loadFile( musicPathway + grooveFileName );
   song1 = minim.loadFile( musicPathway + eurekaFileName );
   song2 = minim.loadFile( musicPathway + competitionFileName );
-  song3 = minim.loadFile( musicPathway + cyclesFFileName );
+  song3 = minim.loadFile( musicPathway + cyclesFileName );
   song4 = minim.loadFile( musicPathway + ghostFileName );
   song5 = minim.loadFile( musicPathway + newsRoomFileName );
   song6 = minim.loadFile( musicPathway + enginesFileName );
@@ -56,7 +56,7 @@ void draw() {
   //Debugging a sound to shorten a file play
   //println( soundEffect1.position(), soundEfffect1.length() );
   //
-  //End draw
+} //End draw
 //
 void keyPressed() {
   //
@@ -64,16 +64,10 @@ void keyPressed() {
   soundEffect0.play();
   soundEffect0.rewind();
   delay(4000); //milliseconds read from draw() println() debugging
-  //println( "keypressed:", soundEffect0.length() );
+  //println( "KeyPressed:", soundEffect0.length() );
   //
-  keyPressedshortCuts();
-  //
-  musicShortCuts();
-  quitButtons();
-  
-  
-  quitButtons();
-  //
+  keyPressedShortCuts();
+//
 } //End keyPressed
 //
 void mousePressed() {
