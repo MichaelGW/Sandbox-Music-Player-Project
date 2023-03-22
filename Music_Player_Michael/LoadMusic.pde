@@ -15,16 +15,16 @@ void loadMusic() {
   String simplestFileName = "The_Simplest.mp3";
   String stingFileName = "The_Simplest_Sting.mp3";
   String closeDoorFileName = "Wood_Door_Open_and_Close_series.mp3";
-  song0 = minim.loadFile( musicPathway + groveFileName );
-  song1 = minim.loadFile( musicPathway + eurekaFileName );
-  song2 = minim.loadFile( musicPathway + competitionFileName );
-  song3 = minim.loadFile( musicPathway + cyclesFileName );
-  song4 = minim.loadFile( musicPathway + ghostFileName );
-  song5 = minim.loadFile( musicPathway + newsRoomFileName );
-  song6 = minim.loadFile( musicPathway + enginesFileName );
-  song7 = minim.loadFile( musicPathway + simplestFileName );
-  soundEffect0 = minim.loadFile( soundEffectPathway + stingFileName );
-  soundEffect1 = minim.loadFile( soundEffectPathway + closeDoorFileName );
+  song[0] = minim.loadFile( musicPathway + groveFileName );
+  song[1] = minim.loadFile( musicPathway + eurekaFileName );
+  song[2] = minim.loadFile( musicPathway + competitionFileName );
+  song[3] = minim.loadFile( musicPathway + cyclesFileName );
+  song[4] = minim.loadFile( musicPathway + ghostFileName );
+  song[5] = minim.loadFile( musicPathway + newsRoomFileName );
+  song[6] = minim.loadFile( musicPathway + enginesFileName );
+  song[7] = minim.loadFile( musicPathway + simplestFileName );
+  soundEffects[0] = minim.loadFile( soundEffectPathway + stingFileName );
+  soundEffects[1] = minim.loadFile( soundEffectPathway + closeDoorFileName );
   //
   //println("Music Pathway is", musicPathway);
 }//End loadMusic

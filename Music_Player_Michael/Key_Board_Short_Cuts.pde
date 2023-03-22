@@ -6,14 +6,14 @@ musicShortCuts();
 }//End keyPressedShortCuts
 //
  void musicShortCuts() {
-   if ( key == '1' ) song0.loop(0);
-   if ( key == '2' ) song1.loop(0);
-   if ( key == '3' ) song2.loop(0);
-   if ( key == '4' ) song3.loop(0);
-   if ( key == '5' ) song4.loop(0);
-   if ( key == '6' ) song5.loop(0);
-   if ( key == '7' ) song6.loop(0);
-   if ( key == '8' ) song7.loop(0);
+   if ( key == '1' ) song[0].loop(0);
+   if ( key == '2' ) song[1].loop(0);
+   if ( key == '3' ) song[2].loop(0);
+   if ( key == '4' ) song[3].loop(0);
+   if ( key == '5' ) song[4].loop(0);
+   if ( key == '6' ) song[5].loop(0);
+   if ( key == '7' ) song[6].loop(0);
+   if ( key == '8' ) song[7].loop(0);
    //
    if ( key == 'U' || key == 'u' ) autoPlay();
    if ( key == 'P' || key == 'p' ) playPause();
@@ -52,45 +52,45 @@ void quitButtonCode() {
   //Ask computer if the song is playing
   //Note: remember to use Auto Play
   //ERROR: song will not play if at the end
-  if ( song0.isPlaying() ) {
-    song0.pause();
+  if ( song[currentSong].isPlaying() ) {
+    song[currentSong].pause();
   } else if ( song0.position() >= song0.length()*4/5 ) { //80% of the song
-    song0.rewind();
-    song0.play();
+    song[currentSong].rewind();
+    song[currentSong].play();
     //
   } else {
     //
-    song0.play(); //Interim solution
+    song[currentSong].play(); //Interim solution
   }
 }//End AutoPlay
 //
   void mute() {
-  if ( song0.isMuted() ) {
-    song0.unmute();
-  } else if ( song0.isMuted() && song0.position() >= song0.length()*4/5 ) {
-    song0.rewind(); 
-    song0.unmute();
+  if ( song[currentSong].isMuted() ) {
+    song[currentSong].unmute();
+  } else if ( song[currentSong].isMuted() && song[currentSong].position() >= song[currentSong].length()*4/5 ) {
+    song[currentSong].rewind(); 
+    song[currentSong].unmute();
   } else {
-    song0.mute(); 
+    song[currentSong].mute(); 
   {
   }//End Mute
   //
   void stopSong() {
   //
-  if ( song0.isPlaying() ) {
-    song0.pause();
-    song0.rewind();
+  if ( song[currentSong].isPlaying() ) {
+    song[currentSong].pause();
+    song[currentSong].rewind();
   } else {
-  song0.rewind();
+  song[currentSong].rewind();
      }
   }// End stop Song
   //
   void fastForward() {
-    if ( song.isPlaying() ) song0.skip(5000); //Its in milliseconds you half wit (+5 sec)
+    if ( song[currentSong].isPlaying() ) song0.skip(5000); //Its in milliseconds you half wit (+5 sec)
   }//End Fast Forward
   //
   void  fastRewind() {
-      if ( song.isPlaying() ) song0.skip(5000); //Its also in milliseconds you half wit (-5 sec)
+      if ( song[currentSong].isPlaying() ) song0.skip(5000); //Its also in milliseconds you half wit (-5 sec)
   }//End Fast Rewind
   //
   void nextSong() {}//End Next Song
