@@ -1,7 +1,6 @@
 //Global Variables
 float textRectX, textRectY, textRectWidth, textRectHeight
 PFont font;
-color purpleInk=#06CE65
 //
 void setup() {
   size(700, 500); //fullscreen(); //displayWidth and displayHeight
