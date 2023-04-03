@@ -64,22 +64,23 @@ void quitButtonCode() {
   }
 }//End AutoPlay
 //
-  void mute() {
-  if ( song[currentSong].isMuted() ) {
+  void mute() 
+  {
+      if ( song[currentSong].isMuted() ) {
     song[currentSong].unmute();
   } else if ( song[currentSong].isMuted() && song[currentSong].position() >= song[currentSong].length()*4/5 ) {
     song[currentSong].rewind(); 
     song[currentSong].unmute();
   } else {
     song[currentSong].mute(); 
-  {
   }//End Mute
   //
-  void stopSong() {
+  void stopSong()
+  {
   //
   if ( song[currentSong].isPlaying() ) {
-    song[currentSong].pause();
-    song[currentSong].rewind();
+    songs[currentSong].pause();
+    songs[currentSong].rewind();
   } else {
   song[currentSong].rewind();
      }
@@ -93,7 +94,15 @@ void quitButtonCode() {
       if ( song[currentSong].isPlaying() ) song0.skip(5000); //Its also in milliseconds you half wit (-5 sec)
   }//End Fast Rewind
   //
-  void nextSong() {}//End Next Song
+  void nextSong() {
+  if ( song[currentSong].isPlaying() ) {
+  } else if ( currentSong >= songs.length-1 ) {
+    currentSong = 0;
+  } else {
+    songs[currentSong].rewind();
+    currentSong++;
+  }
+  }//End Next Song
   //
   void previousSong() {}//End Previous Song
   //
