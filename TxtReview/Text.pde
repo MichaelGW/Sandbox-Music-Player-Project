@@ -5,14 +5,16 @@ float textRectX3, textRectY3, textRectWidth3, textRectHeight3;
 float textRectX, textRectY, textRectWidth, textRectHeight;
 PFont font;
 color purpleInk=#0FDB5F, resetWhiteInk=#FFFFFF; //Not nice for Night Mode, Blue Content
-String string1 = "Computer stuff nya";
+String string1 = "Tippy Toppav The Paige";
 String string2 = "Bottom of page";
 String string3 = "Middle of page";
 //
-void allText() {}// End All Text
- textDraw1();
+void allText() {
+textDraw1();
  textDraw2();
  textDraw3();
+ //
+}// End All Text
 //
 void textSetup() {
 //Pop, from display
@@ -24,8 +26,8 @@ void textSetup() {
   textRectY3 = textRectX1;
 //
 //rect( textRectX1, textRectY1, textRectWidth1, textRectHeight1 );
-  rect( textRectX2, textRectY2, textRectWidth2, textRectHeight2 );
-   rect( textRectX3, textRectY3, textRectWidth3, textRectHeight3 );
+ //rect( textRectX2, textRectY2, textRectWidth2, textRectHeight2 );
+ //rect( textRectX3, textRectY3, textRectWidth3, textRectHeight3 );
    //
     /*
   println("Start of Console");
