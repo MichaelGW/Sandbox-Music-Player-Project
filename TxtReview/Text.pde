@@ -23,7 +23,7 @@ void textSetup() {
   textRectHeight1 = textRectHeight2 =  textRectHeight3 = height*1/10;
   textRectY1 = height*1/10;
   textRectY2 = height*8/10;
-  textRectY3 = textRectX1;
+  textRectY3 = height*5/10;
 //
 //rect( textRectX1, textRectY1, textRectWidth1, textRectHeight1 );
  //rect( textRectX2, textRectY2, textRectWidth2, textRectHeight2 );
