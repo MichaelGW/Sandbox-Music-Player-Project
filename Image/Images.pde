@@ -15,7 +15,7 @@ backgroundImageX = appWidth*0;
 backgroundImageY = appHeight*0;
 backgroundImageWidth = appWidth*5;
 backgroundImageHeight = appHeight*5;
-pic = loadImage(" MAUS.jpg ");
+pic = loadImage("MAUS.jpg");
 //
 //Rectangle Layout and Image Grawing to Canvas
 rect(  backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
