@@ -65,10 +65,10 @@ void autoPlay() {
    - next song will start
    - might even start the next song at the same time as the current song
    */
-  if ( autoPlayON == false () ) {
-    (autoPlayON)= true;
+  if ( autoPlayON == false ) {
+    ( autoPlayON )= true;
   } else {
-    autoPlayON= false;
+    autoPlayON=false;
     songs[currentSong].pause(); //enables play to continue when auto play is turned off
     //songs[currentSong].rewind();
   }
@@ -176,5 +176,4 @@ void loopAndShuffle() {
   //Hint: random() and casting, see Global Variables' currentSong declaration
 }//End Loop And Shuffle
 //
-
 //End Key Board Short Cuts Sub Program
