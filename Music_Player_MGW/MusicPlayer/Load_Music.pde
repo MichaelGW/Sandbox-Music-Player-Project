@@ -25,7 +25,7 @@ void loadMusic() {
   songs[6] = minim.loadFile( musicPathway + enginesFileName);
   songs[7] = minim.loadFile( musicPathway + simplestFileName);
   soundEffects[0] = minim.loadFile("../Sound Effects/Wood_Door_Open_and_Close_Series.mp3");
-  soundEffects[1] = minim.loadFile("../Sound Effects/The_Simplest_Sting.mp3");
+  soundEffects[1] = minim.loadFile("../The_Simplest_Sting.mp3");
   //
   //println("Music Pathway is", musicPathway);
 }//End loadMusic
