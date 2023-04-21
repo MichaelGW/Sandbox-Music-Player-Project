@@ -15,12 +15,12 @@ int numberOfSoundEffects = 2;
 AudioPlayer[] soundEffects = new AudioPlayer[numberOfSoundEffects];
 int currentSong = int ( random( numberOfSongs-1 ) ); //Starts playlist from random song
 //
-int time = 7000;
+int time = 6000;
 //
 Boolean activateWindow=false, autoPlayON=false;
 //
 void setup() {
-  size(300, 300);
+  size(700, 400);
   loadMusic();
   //
   //Illustrate Garbage Collection of Local Variable
@@ -47,7 +47,7 @@ void keyPressed() {
   //Play sound effect when pressing a key, including delay
   soundEffects[0].play();
   soundEffects[0].rewind();
-  delay(4000); //milliseconds read from draw() println() debugging
+  delay(3000); //milliseconds read from draw() println() debugging
   //println( "KeyPressed:", soundEffects[0].length() );
   //
   keyPressedShortCuts();
