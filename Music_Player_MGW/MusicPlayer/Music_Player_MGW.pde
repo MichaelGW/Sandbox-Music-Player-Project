@@ -7,6 +7,7 @@ import ddf.minim.ugens.*;
 //
 //Global Variables
 Minim minim;
+AudioPlayer soundEffect0, soundEffect1;
 // Pre-array: AudioPlayer song0, song1, song2, song3, song4, song5, song6, song7;
 int numberOfSongs = 8;
 AudioPlayer[] songs = new AudioPlayer[numberOfSongs]; //Play List Data Structure
@@ -32,10 +33,10 @@ void draw() {
   if ( activateWindow == true ) background(0);
   //
   //Debugging the Effective Length of the Sound Effect to code a delay
-  //println ( soundEffect0.position(), soundEffect0.length() );
-  //println ("When does the sound stop? Indicates delay");
+  println ( soundEffect0.position(), soundEffect0.length() );
+  println ("When does the sound stop? Indicates delay");
   // Debugging a sound to shorten a file play
-  //println( soundEffect1.position(), soundEffect1.length() );
+  println( soundEffect1.position(), soundEffect1.length() );
   println(autoPlayON, songs[currentSong].isPlaying(), currentSong, songs[currentSong].position(), songs[currentSong].length());
   //
   if ( autoPlayON==true ) autoPlayMusic();
@@ -48,7 +49,7 @@ void keyPressed() {
   soundEffects[0].play();
   soundEffects[0].rewind();
   delay(3000); //milliseconds read from draw() println() debugging
-  //println( "KeyPressed:", soundEffects[0].length() );
+  println( "KeyPressed:", soundEffects[0].length() );
   //
   keyPressedShortCuts();
   //
