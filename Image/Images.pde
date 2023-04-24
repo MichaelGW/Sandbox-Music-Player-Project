@@ -45,8 +45,8 @@ if ( picWidth >= picHeight ) { //TRUE if Landscape or Square
 //Rectangle Layout and Image drawing to CANVAS
 //rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
 //
-if ( nightMode==false ) tint(255,128);
-if (nightMode==true) tint(64,64,40);
+//if ( nightMode==false ) tint(255,128);
+//if (nightMode==true) tint(64,64,40);
 //No ASPECT RATIO
 image( pic, backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight);
 //ASPECT RATIO
