@@ -14,7 +14,7 @@ void loadMusic() {
   String enginesFileName = "Start_Your_Engines.mp3";
   String simplestFileName = "The_Simplest.mp3";
   String stingFileName = "../../Sound Effects/The_Simplest_Sting.mp3";
-  String closeDoorFileName = "../../Sound Effects/Wood_Door_Open_and_Close_Series.mp3";
+  String closeDoorFilffreName = "../../Sound Effects/Wood_Door_Open_and_Close_Series.mp3";
   //Note: will change to Array and Index
   songs[0] = minim.loadFile( musicPathway + grooveFileName );
   songs[1] = minim.loadFile( musicPathway + eurekaFileName );
